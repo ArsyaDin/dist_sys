@@ -31,9 +31,11 @@ docker compose -f compose/rest.yml exec rest-client python client.py --op both -
 ```
 - - -
 Permintaan yang dikirimkan pada Server berupa kedua operasi yang terdapat pada client.py
+
 ![](/REST/Assets/Op.png)
 
 Kemudian Server akan merespon dengan menjalankan 
+
 ![](/REST/Assets/add.png)
 ![](/REST/Assets/mult.png)
 
@@ -66,6 +68,7 @@ Lalu hentikan penangkapan paket dengan menggunakan kombinasi kunci CTRL+C sehing
 ![](/REST/Assets/packet.png)
 - - -
 Paket yang sudah disimpan dalam file REST.pcap tadi kemudian dapat dibuka dan dibaca pesan di dalamnya menggunakan Wireshark
+
 ![](/REST/Assets/WS.png)
 - - -
 
