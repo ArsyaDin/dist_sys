@@ -13,12 +13,20 @@ import json
 # Mendefinisikan metode penjumlahan
 @dispatcher.add_method
 def add(a, b):
-    return a / b
+    return a + b
 
 # Mendefinisikan metode perkalian
 @dispatcher.add_method
 def multiply(a, b):
     return a * b
+
+@dispatcher.add_method
+def subtract(a, b):
+    return a - b
+
+@dispatcher.add_method
+def divide(a, b):
+    return a / b
 
 # Kelas untuk menangani permintaan HTTP
 class RequestHandler(BaseHTTPRequestHandler):

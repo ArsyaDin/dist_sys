@@ -16,7 +16,7 @@ port = 1883  # Port default untuk MQTT
 
 # Inisialisasi topik dan pesan suhu
 topic = "sister/temp/athonk"
-suhu = 30  # Suhu tetap 28'C
+suhu = 30
 
 # Callback untuk koneksi
 def on_connect(client, userdata, flags, rc, properties=None):
@@ -31,7 +31,7 @@ client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.on_connect = on_connect
 
 # Menghubungkan ke broker dengan timeout dan error handling
-try:
+try:    
     print(f"Menghubungkan ke {broker}...")
     client.connect(broker, port, keepalive=60)
 except Exception as e:
