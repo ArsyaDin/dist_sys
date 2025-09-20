@@ -15,8 +15,8 @@ broker = "mqtt-broker"
 port = 1883  # Port default untuk MQTT
 
 # Inisialisasi topik dan pesan suhu
-topic = "sister/temp"
-suhu = 28  # Suhu tetap 28'C
+topic = "sister/temp/athonk"
+suhu = 30  # Suhu tetap 28'C
 
 # Callback untuk koneksi
 def on_connect(client, userdata, flags, rc, properties=None):
