@@ -15,11 +15,9 @@ def call_rpc(method, params):
     response = requests.post(url, data=json.dumps(payload), headers=headers).json()
     return response
 
-# Panggil operasi penjumlahan (uses division in server; provide numbers)
 result_add = call_rpc("add", [10, 2])
 print(f"Result of add: {result_add['result']}")
 
-# Panggil operasi perkalian
 result_multiply = call_rpc("multiply", [10, 10])
 print(f"Result of multiply: {result_multiply['result']}")
 
