@@ -24,9 +24,11 @@ docker compose -f compose/rpc.yml exec rpc-client python rpcclient.py
 ```
 - - -
 Client akan memanggil permintaan yang terdapat pada rpcclient.py seperti yang ada pada gambar di bawah
+
 ![](/RPC/Assets/Client_op.png)
 - - -
 Kemudian Server akan menjawab dengan menjalankan operasi ini
+
 ![](/RPC/Assets/Server_op.png)
 - - -
 Terminal akan menampilkan pesan yang didapat oleh Server dan juga hasil dari operasi permintaan Client
